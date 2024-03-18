@@ -13,3 +13,17 @@ h1 {
         background-color: black !important;
     }
 
+    .bg-gray-50 {
+        --bg-opacity: 1;
+        background-color: #156fc8;
+        background-color: rgb(170 192 215);
+    }
+
+    .rounded {
+        border-radius: 0.375rem; /* Adjust the radius as needed */
+    }
+    
+    .bg-gray-50:hover {
+        background-color: #CCCCCC; 
+        color: #000000; 
+    }
