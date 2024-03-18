@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+<div class="background-image grid grid-cols-1 m-auto" style="background-image: url('/images/bck.jpg');">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                    Do you want to become a developer?
+                Fashioning a Sustainable Future
                 </h1>
              
 <a href="/blog" class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase rounded">
@@ -16,21 +16,21 @@
     </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-        <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
-        </div>
+    <div class="secondrounded-image">
+        <img src="{{ asset('images/shirt.jpg') }}" width="700" alt="">
+    </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
-                Struggling to be a better web developer?
+            Struggling to Find Your Fashion Identity?
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+            Discover Your Unique Style with Us!, Whether you're a trendsetter or someone who prefers classic elegance, finding your fashion identity can be a journey. But fear not! Here at this Fashion Blog, we're dedicated to guiding you every step of the way.
             </p>
 
             <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+            Unleash Your Inner Fashionista and Embrace Your True Style.
             </p>
 
             <a 
@@ -47,16 +47,16 @@
         </h2>
 
         <span class="font-extrabold block text-4xl py-1">
-            Ux Design
+        Fashion Styling
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Project Management
+        Fashion Project Management
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Digital Strategy
+        Fashion Digital Strategy
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Backend Development
+        Fashion Brand Development
         </span>
     </div>
 
@@ -70,7 +70,7 @@
         </h2>
 
         <p class="m-auto w-4/5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
+        discover the power of fashion to transform not just your wardrobe, but your entire outlook on life.
         </p>
     </div>
 
@@ -82,7 +82,7 @@
                 </span>
 
                 <h3 class="text-xl font-bold py-10">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus dolorum error culpa laboriosam. Enim voluptas earum repudiandae consequuntur ad? Expedita labore aspernatur facilis quasi ex? Nemo hic placeat et?
+                Exploring the latest trends, finding your unique style, and navigating the ever-changing fashion landscape can be overwhelming. But fear not! With our expert guidance, you'll learn to embrace your individuality, express yourself through fashion, and confidently step into the world of style.
                 </h3>
 
                 <a 
@@ -92,8 +92,8 @@
                 </a>
             </div>
         </div>
-        <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
-        </div>
+        <div class="image-container">
+    <img src="{{ asset('images/hs.jpg') }}"  alt="">
+</div>
     </div>
 @endsection

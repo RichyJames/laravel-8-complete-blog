@@ -5,7 +5,7 @@
 @import "tailwindcss/utilities";
 
 h1 {
-    color: black !important; 
+    color: rgb(255, 255, 255) !important; 
 }
 
 
@@ -20,10 +20,33 @@ h1 {
     }
 
     .rounded {
-        border-radius: 0.375rem; /* Adjust the radius as needed */
+        border-radius: 0.375rem; 
     }
     
     .bg-gray-50:hover {
         background-color: #CCCCCC; 
         color: #000000; 
+    }
+
+    .bg-blue-500{
+        --bg-opacity: 1;
+        background-color: #156fc8;
+        background-color: rgb(170 192 215);
+    }
+
+    .bg-blue-500:hover {
+        background-color: #CCCCCC; 
+        color: #000000; 
+    }
+
+    .background-image {
+        height: 500px; 
+    }
+    
+    .image-container img {
+        height: 420px; /* Adjust the height as needed */
+    }
+    
+    .secondrounded-image img {
+        border-radius: 10px; /* Adjust the border radius as needed */
     }
