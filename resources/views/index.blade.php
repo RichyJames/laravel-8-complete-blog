@@ -1,19 +1,24 @@
 @extends('layouts.app')
 
+
 @section('content')
-<div class="background-image grid grid-cols-1 m-auto" style="background-image: url('/images/bck.jpg');">
-        <div class="flex text-gray-100 pt-10">
-            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
+<div class="background-video grid grid-cols-1 m-auto">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+        <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
+        <!-- Add additional source elements for different video formats if necessary -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="flex text-gray-100 pt-10">
+        <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
+            <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
                 Fashioning a Sustainable Future
-                </h1>
-             
-<a href="/blog" class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase rounded">
-    Read More
-</a>
-            </div>
+            </h1>
+            <a href="/blog" class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase rounded">
+                Read More
+            </a>
         </div>
     </div>
+</div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
     <div class="secondrounded-image">
@@ -95,5 +100,7 @@
         <div class="image-container">
     <img src="{{ asset('images/hs.jpg') }}"  alt="">
 </div>
+
+
     </div>
 @endsection
