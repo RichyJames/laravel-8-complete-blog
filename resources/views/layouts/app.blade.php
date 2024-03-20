@@ -17,33 +17,44 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-blue-900 py-6">
-            <div class="container mx-auto flex justify-between items-center px-6">
-                <div>
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
-                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
-                    @guest
-                        <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        @if (Route::has('register'))
-                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        @endif
-                    @else
-                        <span>{{ Auth::user()->name }}</span>
-
-                        <a href="{{ route('logout') }}"
-                           class="no-underline hover:underline"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+        <!-- Header -->
+<header class="bg-blue-900 py-6">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <div>
+            <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
+                {{ config('app.name', 'Laravel') }}
+            </a>
+        </div>
+        <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+            <ul class="flex items-center">
+                <li class="mr-6">
+                    <a href="{{ route('contact') }}" class="text-gray-300 hover:text-white">Contact</a>
+                </li>
+                @guest
+                    <li class="mr-6">
+                        <a href="{{ route('login') }}" class="text-gray-300 hover:text-white">{{ __('Login') }}</a>
+                    </li>
+                    @if (Route::has('register'))
+                        <li>
+                            <a href="{{ route('register') }}" class="text-gray-300 hover:text-white">{{ __('Register') }}</a>
+                        </li>
+                    @endif
+                @else
+                    <li class="mr-6">{{ Auth::user()->name }}</li>
+                    <li>
+                        <a href="{{ route('logout') }}" class="text-gray-300 hover:text-white"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}
                         </form>
-                    @endguest
-                </nav>
-            </div>
-        </header>
+                    </li>
+                @endguest
+            </ul>
+        </nav>
+    </div>
+</header>
 
         @yield('content')
         <div class="footer-wrapper">

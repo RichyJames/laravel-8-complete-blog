@@ -1,10 +1,10 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController; // Import the ContactController
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +25,8 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-// Add a route for the footer page if needed
-Route::get('/footer', [PagesController::class, 'footer'])->name('footer');
+Route::get('/contact', [ContactController::class, 'showContactForm'])->name('contact');
+
+
+
+Route::post('/send-message', [ContactController::class, 'sendMessage'])->name('send-message');
