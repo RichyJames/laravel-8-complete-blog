@@ -29,6 +29,10 @@
             <ul class="flex items-center">
 
             <li class="mr-6">
+    <a href="{{ route('featured') }}" class="text-gray-300 hover:text-white">Featured Products</a>
+</li>
+
+            <li class="mr-6">
                     <a href="{{ route('about') }}" class="text-gray-300 hover:text-white">About Us</a>
                 </li>
                 
