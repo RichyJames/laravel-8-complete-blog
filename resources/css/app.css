@@ -78,3 +78,49 @@ h1 {
         background-color: #2950ac;
         background-color: rgb(212, 218, 226);
     }
+
+    /* Add these styles to your CSS file */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.pr-8 {
+    padding-right: 2rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.leading-relaxed {
+    line-height: 1.75;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+/* Add more styles as needed */

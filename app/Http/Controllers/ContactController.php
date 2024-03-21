@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function sendMessage(Request $request)
     {
-        // Logic to send the message
+        return redirect('/');
     }
     public function showContactForm()
     {

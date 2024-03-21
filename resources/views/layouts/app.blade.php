@@ -27,6 +27,11 @@
         </div>
         <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
             <ul class="flex items-center">
+
+            <li class="mr-6">
+                    <a href="{{ route('about') }}" class="text-gray-300 hover:text-white">About Us</a>
+                </li>
+                
                 <li class="mr-6">
                     <a href="{{ route('contact') }}" class="text-gray-300 hover:text-white">Contact</a>
                 </li>

@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ContactController; // Import the ContactController
+use App\Http\Controllers\ContactController; 
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +29,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/contact', [ContactController::class, 'showContactForm'])->name('contact');
 
 
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::post('/send-message', [ContactController::class, 'sendMessage'])->name('send-message');
