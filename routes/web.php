@@ -9,6 +9,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\FeaturedProductController; 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +40,4 @@ Route::get('/featured/{id}', [FeaturedProductController::class, 'show'])->name('
 Route::get('/featured/{id}/edit', [FeaturedProductController::class, 'edit'])->name('featured.edit');
 Route::put('/featured/{id}', [FeaturedProductController::class, 'update'])->name('featured.update');
 Route::delete('/featured/{id}', [FeaturedProductController::class, 'destroy'])->name('featured.destroy');
+
